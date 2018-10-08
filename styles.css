@@ -1,5 +1,7 @@
 body {
 	background-color: #232323;
+	margin: 0;
+	font-family: "Montserrat", "Avenir";
 }
 
 #container {
@@ -16,9 +18,50 @@ body {
 }
 
 h1 {
+	text-align: center;
+	line-height: 1.1;
 	color: white;
+	background-color: steelblue;
+	margin: 0;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 20px 0;
 }
 
-span {
-	color: white;
+#stripe {
+	background: white;
+	height: 30px;
+	text-align: center;
 }
+
+.selected {
+	color: white;
+	background-color: steelblue;
+}
+	
+#colorDisplay {
+	font-size: 200%;
+}
+
+button {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all, 2.0s;
+}
+
+button:hover {
+	color: white;
+	background-color: steelblue;
+}
+
+#message {
+	display: inline-block;
+	width: 20%;
+}
+
