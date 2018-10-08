@@ -47,6 +47,7 @@ resetButton.addEventListener("click", function(){
 	//change colorDisplay to match pickedColor
 	colorDisplay.textContent = pickedColor;
 	//change colors of squares on page
+	messageDisplay.textContent = "";
 	for(var i = 0; i < squares.length; i++){
 		squares[i].style.backgroundColor = colors[i];
 	}
@@ -85,13 +86,14 @@ function changeColors(color){
 	}
 };
 
-//
+//returns a random whole number between 1 and 255
 function pickColor(){
 	//pick a random number
 	var random = Math.floor(Math.random() * colors.length);
 	return colors[random];
 }
 
+//pushes string of three random RGB colors into an array
 function generateRandomColors(num){
 	//make an array
 	var arr = [];
@@ -104,6 +106,7 @@ function generateRandomColors(num){
 	return arr;
 }
 
+//returns a string of three random RGB values
 function randomColor(){
 	//pick a red from 0 - 255
 	var r = Math.floor(Math.random() * 256);
